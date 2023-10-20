@@ -1,0 +1,46 @@
+local NEVERWIN = loadstring(game:HttpGet("https://raw.githubusercontent.com/3345-c-a-t-s-u-s/NEVERWIN/main/source.lua"))()
+
+local Window = NEVERWIN:AddWindow("BEDOL HUB","BLADE BALL | VERSION BETA | NEVERWIN")
+
+Window:AddTabLabel('Tab Section')
+
+local Tab = Window:AddTab('Main')
+
+local SectionLeft = Tab:AddSection('Main',"left")
+
+local SectionRight = Tab:AddSection('ESP',"right")
+
+SectionLeft:AddToggle('Auto parry',false,function(val)
+	loadstring(game:HttpGet("https://pastebin.com/raw/EWZ1jeuS"))()
+end)
+
+SectionLeft:AddToggle('King Crimson',false,function(val)
+	getgenv().SpamSpeed = 1
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Hosvile/Refinement/main/MC%3ABlade%20Ball%20Spam",true))()
+end)
+
+SectionLeft:AddToggle('Follow Ball',false,function(val)
+	print('toggle',val)
+end)
+
+SectionLeft:AddToggle('View Part',false,function(val)
+	print('toggle',val)
+end)
+
+SectionLeft:AddSlider('Follow Speed',1,100,4,function(val)
+	print('slider ',val)
+end)
+
+SectionRight:AddToggle('ESP Players',false,function(val)
+	print('toggle',val)
+end)
+
+SectionRight:AddToggle('ESP Ball',false,function(val)
+	print('toggle',val)
+end)
+
+SectionRight:AddToggle('ESP Target',false,function(val)
+	print('toggle',val)
+end)
+
+local Tab = Window:AddTab('info')
